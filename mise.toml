@@ -17,13 +17,13 @@ hide = true
 silent = true
 run = """
     # mise install
-    # mise install &> /dev/null
+     mise install &> /dev/null
 
     # Install the packages
-    # rm -rf {{ vars.mise_bin_dir }}
-    # mkdir -p {{ vars.mise_bin_dir }}
-    # echo 'uv pip $@' > {{ vars.mise_bin_dir }}/pip
-    # echo 'uv pip $@' > {{ vars.mise_bin_dir }}/pip3
-    # chmod +x {{ vars.mise_bin_dir }}/pip
-    # chmod +x {{ vars.mise_bin_dir }}/pip3
+     rm -rf {{ vars.mise_bin_dir }}
+     mkdir -p {{ vars.mise_bin_dir }}
+     echo 'uv pip $@' > {{ vars.mise_bin_dir }}/pip
+     echo 'uv pip $@' > {{ vars.mise_bin_dir }}/pip3
+     chmod +x {{ vars.mise_bin_dir }}/pip
+     chmod +x {{ vars.mise_bin_dir }}/pip3
 """

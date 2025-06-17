@@ -1,11 +1,12 @@
-# Test your FastAPI endpoints
-
+### Health‐check (root)
 GET http://127.0.0.1:8000/
 Accept: application/json
 
-###
-
-GET http://127.0.0.1:8000/hello/User
+### Query endpoint
+POST http://127.0.0.1:8000/query
+Content-Type: application/json
 Accept: application/json
 
-###
+{
+    "prompt": "Generate a SQL query to list all users created in the last 7 days"
+}
